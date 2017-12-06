@@ -1,5 +1,5 @@
 /**
- * 
+ * 常见的单例模式实现
  */
 /**
  * @author Administrator

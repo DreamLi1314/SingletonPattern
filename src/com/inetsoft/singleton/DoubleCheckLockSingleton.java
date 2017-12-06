@@ -11,7 +11,7 @@ public class DoubleCheckLockSingleton {
 	private static volatile DoubleCheckLockSingleton singleton;
 
 	private DoubleCheckLockSingleton() {}
-	
+
 	public static DoubleCheckLockSingleton getInstance() {
 		if(singleton == null) {
 			synchronized (DoubleCheckLockSingleton.class) {
@@ -20,7 +20,7 @@ public class DoubleCheckLockSingleton {
 				}
 			}
 		}
-		
+
 		return singleton;
 	}
 	
